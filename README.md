@@ -26,6 +26,16 @@ mysql -u root --password=password
 ```
 - Ganti nama_user menjadi user yang ada di database kamu
 
+## Melihat privilages user
+```sql
+SHOW GRANTS FOR '<user>'@'<host>'
+```
+
+## Menggunakan database
+```sql
+USE database_name;  
+```
+
 ## Gunakan lockForUpdate dan DB Transaction jika ingin membuat race condition di database
 Dalam SQL, LOCK FOR UPDATE adalah sebuah klausa yang digunakan dalam perintah SELECT untuk mengunci baris atau data yang dipilih. Ketika sebuah transaksi menggunakan LOCK FOR UPDATE pada baris tertentu, transaksi lain tidak dapat mengakses atau memodifikasi baris tersebut sampai transaksi asli selesai (di-commit atau di-rollback).
 
