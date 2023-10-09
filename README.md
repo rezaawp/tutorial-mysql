@@ -1,5 +1,10 @@
 # tutorial-mysql
 
+## Membuat user baru
+```
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+```
+
 ## Menjalankan perintah mysql di terminal/cmd
 
 Untuk menjalankan MySQL di CMD dengan username dan password, Anda dapat menggunakan perintah berikut:
