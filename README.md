@@ -69,3 +69,6 @@ https://www.youtube.com/@PojokCode/playlists
 
 ## Error code specific driver mysql
 https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html
+
+## Error code specific driver MariaDB (LENGKAP ! )
+https://mariadb.com/kb/en/mariadb-error-codes/
