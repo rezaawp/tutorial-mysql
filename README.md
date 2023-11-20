@@ -76,5 +76,5 @@ https://dev.mysql.com/doc/refman/8.2/en/error-handling.html
 ## Error code specific driver MariaDB (LENGKAP ! )
 https://mariadb.com/kb/en/mariadb-error-codes/
 
-## Advanced - Weef of month
+## Advanced - Week of month
 https://medium.com/analytics-vidhya/advanced-sql-query-how-to-get-week-number-of-the-month-from-date-in-sql-9ffb2f94132f
