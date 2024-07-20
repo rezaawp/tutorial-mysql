@@ -5,6 +5,9 @@
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
 ```
 
+## Login sebagai sudo / super admin tanpa diminta password
+sudo mysql -u'root'
+
 ## Menjalankan perintah mysql di terminal/cmd
 
 Untuk menjalankan MySQL di CMD dengan username dan password, Anda dapat menggunakan perintah berikut:
