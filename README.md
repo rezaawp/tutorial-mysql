@@ -81,3 +81,8 @@ https://mariadb.com/kb/en/mariadb-error-codes/
 
 ## Advanced - Week of month
 https://medium.com/analytics-vidhya/advanced-sql-query-how-to-get-week-number-of-the-month-from-date-in-sql-9ffb2f94132f
+
+## Import DB via terminal
+- login sebagai root
+- `use database nama_db`
+- `source /path/file.sql`
