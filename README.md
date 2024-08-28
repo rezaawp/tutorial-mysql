@@ -5,6 +5,9 @@
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
 ```
 
+## Update user
+ALTER USER 'username'@'host' IDENTIFIED BY 'new_password';
+
 ## Login sebagai sudo / super admin tanpa diminta password
 sudo mysql -u'root'
 
