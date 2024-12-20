@@ -89,3 +89,84 @@ https://medium.com/analytics-vidhya/advanced-sql-query-how-to-get-week-number-of
 - login sebagai root
 - `use database nama_db`
 - `source /path/file.sql`
+
+## Performance algoritma
+Ketika sudah ada proses yang begitu banyak dan kompleks tapi ingin tuning / meningkatkan performance. Pakai algoritma function di bawah ini (menggunakan rekrusif): 
+```php
+function test($index = 0) {
+    $users = [
+        [
+            'id' => 1,
+            'name' => 'John Doe',
+            'EMAIL' => 'johndoe@example.com',
+            'created_at' => '2024-10-01T10:30:00Z',
+            'status' => 'active',
+            'profile' => [
+                'age' => 30,
+                'gender' => 'male',
+                'location' => 'New York'
+            ],
+        ],
+        [
+            'id' => 2,
+            'name' => 'Jane Smith',
+            'EMAIL' => 'janesmith@example.com',
+            'created_at' => '2024-09-15T08:45:00Z',
+            'status' => 'inactive',
+            'profile' => [
+                'age' => 27,
+                'gender' => 'female',
+                'location' => 'Los Angeles'
+            ],
+        ],
+        [
+            'id' => 3,
+            'name' => 'Alice Johnson',
+            'EMAIL' => 'alicej@example.com',
+            'created_at' => '2024-11-01T13:20:00Z',
+            'status' => 'active',
+            'profile' => [
+                'age' => 35,
+                'gender' => 'female',
+                'location' => 'Chicago'
+            ],
+        ],
+        [
+            'id' => 4,
+            'name' => 'Bob Brown',
+            'EMAIL' => 'bobbrown@example.com',
+            'created_at' => '2024-08-22T11:05:00Z',
+            'status' => 'suspended',
+            'profile' => [
+                'age' => 40,
+                'gender' => 'male',
+                'location' => 'San Francisco'
+            ],
+        ],
+        [
+            'id' => 5,
+            'name' => 'Charlie Green',
+            'EMAIL' => 'charliegreen@example.com',
+            'created_at' => '2024-07-30T16:00:00Z',
+            'status' => 'active',
+            'profile' => [
+                'age' => 22,
+                'gender' => 'non-binary',
+                'location' => 'Seattle'
+            ],
+        ]
+    ];
+
+    if ($index < count($users)) {
+        $user = $users[$index];
+        echo "Name: " . $user['name'] . "\n";
+        test($index + 1);
+    } else {
+        for ($i = 0; $i < count($users); $i++) {
+            $user = $users[$i];
+        }
+    }
+}
+
+test();
+```
