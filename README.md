@@ -172,3 +172,9 @@ test();
 ```
 
 # tutorial postgress
+membuat temp table sama dengan seperti struktur tabel:
+CREATE TEMP TABLE temp_table_name (
+    LIKE original_table INCLUDING ALL, -- Menyalin struktur tabel asli
+    new_column1 data_type,             -- Kolom tambahan
+    new_column2 data_type              -- Kolom tambahan lainnya
+);
